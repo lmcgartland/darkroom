@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/Sidebar";
-import { promises as fs } from 'fs';
-import path from 'path';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,8 +22,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const presetsDir = path.join(process.cwd(), 'public', 'presets');
-  const presets = await fs.readdir(presetsDir);
 
   return (
     <html lang="en">
