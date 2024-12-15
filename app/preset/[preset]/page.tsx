@@ -18,7 +18,7 @@ export default async function GalleryPage({
 }: {
   params: { preset: string };
 }) {
-  const { preset } = await params;
+  const { preset } = params;
   const presetDir = path.join(process.cwd(), "public", "presets", preset);
 
   const originalImage = `/presets/${preset}/original.jpg`;
