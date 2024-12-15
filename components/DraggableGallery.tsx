@@ -15,7 +15,7 @@ const DraggableGallery: React.FC<DraggableGalleryProps> = ({
   afterImage,
   alt,
 }) => {
-  const [sliderValue, setSliderValue] = useState([50]);
+  const [sliderValue, setSliderValue] = useState([100]);
   const [aspectRatio, setAspectRatio] = useState(16 / 9); // Default aspect ratio
 
   const handleImageLoad = (naturalWidth: number, naturalHeight: number) => {
@@ -23,7 +23,7 @@ const DraggableGallery: React.FC<DraggableGalleryProps> = ({
   };
 
   return (
-    <div className="relative w-full max-w-2xl mx-auto">
+    <div className="relative w-full max-w-xl mx-auto">
       <div 
         className="relative overflow-hidden"
         style={{ paddingBottom: `${(1 / aspectRatio) * 100}%` }}
