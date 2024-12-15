@@ -4,7 +4,7 @@
     xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/"
    crs:PresetType="Normal"
    crs:Cluster=""
-   crs:UUID="EBF5FD316C974CC2A052BFD39EA17673"
+   crs:UUID="E4B9A80CC5C94794BB444A0240E27E4A"
    crs:SupportsAmount2="True"
    crs:SupportsAmount="True"
    crs:SupportsColor="True"
@@ -18,6 +18,7 @@
    crs:Copyright=""
    crs:ContactInfo=""
    crs:Version="17.0"
+   crs:CompatibleVersion="234881024"
    crs:ProcessVersion="15.4"
    crs:WhiteBalance="Custom"
    crs:Temperature="5750"
@@ -27,7 +28,7 @@
    crs:Highlights2012="-19"
    crs:Shadows2012="+27"
    crs:Whites2012="+26"
-   crs:Blacks2012="-7"
+   crs:Blacks2012="-15"
    crs:Texture="0"
    crs:Clarity2012="0"
    crs:Dehaze="0"
@@ -95,7 +96,7 @@
    crs:DefringeGreenHueLo="40"
    crs:DefringeGreenHueHi="60"
    crs:GrainAmount="59"
-   crs:GrainSize="33"
+   crs:GrainSize="39"
    crs:GrainFrequency="48"
    crs:PostCropVignetteAmount="-7"
    crs:PostCropVignetteMidpoint="50"
@@ -114,11 +115,11 @@
    crs:OverrideLookVignette="True"
    crs:ToneCurveName2012="Linear"
    crs:HasSettings="True"
-   crs:AsShotTemperature="5900"
-   crs:AsShotTint="14">
+   crs:AsShotTemperature="5350"
+   crs:AsShotTint="16">
    <crs:Name>
     <rdf:Alt>
-     <rdf:li xml:lang="x-default">New Hampshire</rdf:li>
+     <rdf:li xml:lang="x-default">New Hampshire 2</rdf:li>
     </rdf:Alt>
    </crs:Name>
    <crs:ShortName>
@@ -170,6 +171,61 @@
      <rdf:li>-1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000, -1.000000</rdf:li>
     </rdf:Seq>
    </crs:PointColors>
+   <crs:MaskGroupBasedCorrections>
+    <rdf:Seq>
+     <rdf:li>
+      <rdf:Description
+       crs:What="Correction"
+       crs:CorrectionAmount="1"
+       crs:CorrectionActive="true"
+       crs:CorrectionName="Mask 1"
+       crs:CorrectionSyncID="3221B8B1F7D649F6A2CA6FB860B6C18C"
+       crs:LocalExposure="0"
+       crs:LocalHue="0"
+       crs:LocalSaturation="0"
+       crs:LocalContrast="0"
+       crs:LocalClarity="0"
+       crs:LocalSharpness="0"
+       crs:LocalBrightness="0"
+       crs:LocalToningHue="0"
+       crs:LocalToningSaturation="0"
+       crs:LocalExposure2012="-0.152152"
+       crs:LocalContrast2012="0"
+       crs:LocalHighlights2012="0"
+       crs:LocalShadows2012="0"
+       crs:LocalWhites2012="0"
+       crs:LocalBlacks2012="0"
+       crs:LocalClarity2012="0"
+       crs:LocalDehaze="0"
+       crs:LocalLuminanceNoise="0"
+       crs:LocalMoire="0"
+       crs:LocalDefringe="0"
+       crs:LocalTemperature="0"
+       crs:LocalTint="0"
+       crs:LocalTexture="0"
+       crs:LocalGrain="0"
+       crs:LocalCorrectedDepth="0"
+       crs:LocalCurveRefineSaturation="100">
+      <crs:CorrectionMasks>
+       <rdf:Seq>
+        <rdf:li
+         crs:What="Mask/Gradient"
+         crs:MaskActive="true"
+         crs:MaskName="Linear gradient 1"
+         crs:MaskBlendMode="0"
+         crs:MaskInverted="false"
+         crs:MaskSyncID="A37849E198974A90AC9C5481A5745D47"
+         crs:MaskValue="1"
+         crs:ZeroX="0.550466"
+         crs:ZeroY="0.625954"
+         crs:FullX="0.553011"
+         crs:FullY="1.013677"/>
+       </rdf:Seq>
+      </crs:CorrectionMasks>
+      </rdf:Description>
+     </rdf:li>
+    </rdf:Seq>
+   </crs:MaskGroupBasedCorrections>
    <crs:Look>
     <rdf:Description
      crs:Name="Apple ProRaw"
@@ -177,6 +233,7 @@
      crs:UUID="D866CAE82BD24C3F896B6762BDDA6C50"
      crs:SupportsMonochrome="false"
      crs:SupportsOutputReferred="false"
+     crs:Copyright="© 2021 Adobe Systems, Inc."
      crs:Stubbed="true">
     <crs:Group>
      <rdf:Alt>

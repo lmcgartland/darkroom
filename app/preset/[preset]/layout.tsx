@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import { promises as fs } from 'fs';
 import path from 'path';
@@ -29,16 +28,11 @@ export default async function RootLayout({
   const presets = await fs.readdir(presetsDir);
 
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
         <div className="flex">
+          <Sidebar presets={presets} />
           <div className="flex-grow ml-64">
             {children}
           </div>
         </div>
-      </body>
-    </html>
   );
 }

@@ -14,7 +14,7 @@ export async function generateStaticParams() {
 }
 
 export default async function GalleryPage({ params }: { params: { preset: string } }) {
-  const { preset } = params;
+  const { preset } = await params;
   const presetDir = path.join(process.cwd(), 'public', 'presets', preset);
   
   const originalImage = `/presets/${preset}/original.jpg`;
@@ -23,8 +23,8 @@ export default async function GalleryPage({ params }: { params: { preset: string
   const exifData = await getExifData(path.join(presetDir, 'original.jpg'));
 
   return (
-    <div className="flex flex-col min-h-screen p-4 sm:p-8 md:p-12 lg:p-16 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex-grow flex flex-col justify-center items-center gap-8 w-full max-w-6xl mx-auto">
+    <div className="p-4 sm:p-8 md:p-12 lg:p-16 font-[family-name:var(--font-geist-mono)]">
+      <main className="flex flex-col justify-center items-center gap-8 w-full max-w-6xl mx-auto">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-center sm:text-left font-[family-name:var(--font-geist-mono)] mb-4">
           {preset}
         </h1>
