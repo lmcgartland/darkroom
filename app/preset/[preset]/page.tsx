@@ -13,11 +13,12 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function GalleryPage({
-  params,
-}: {
-  params: { preset: string };
-}) {
+export default async function GalleryPage(
+  props: {
+    params: Promise<{ preset: string }>;
+  }
+) {
+  const params = await props.params;
   const { preset } = params;
   const presetDir = path.join(process.cwd(), "public", "presets", preset);
 
