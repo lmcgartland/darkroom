@@ -29,7 +29,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="flex">
-          <div className="flex-grow ml-64">
+          <div className="flex-grow">
             {children}
           </div>
         </div>

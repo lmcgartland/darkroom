@@ -19,7 +19,7 @@ export default async function RootLayout({
   return (
     <div className="flex">
       <Sidebar presets={presets} />
-      <div className="flex-grow ml-64">{children}</div>
+      <div className="flex-grow">{children}</div>
     </div>
   );
 }
