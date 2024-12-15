@@ -2,7 +2,7 @@ import ExifReader from 'exifreader';
 import { promises as fs } from 'fs';
 
 function formatDate(dateString: string): string {
-  const [datePart, timePart] = dateString.split(' ');
+  const [datePart, _timePart] = dateString.split(' ');
   const [year, month, day] = datePart.split(':');
   const date = new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
   
